@@ -11,7 +11,7 @@
   <artifactId>xd-cloud-frameword</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>xd-cloud-frameword Maven Webapp</name>
+  <name>xd-cloud-frameword</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -21,15 +21,11 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
-    <finalName>xd-cloud-frameword</finalName>
-  </build>
   <modules>
-  	
-  	
   	<module>xd-cloud-zipkin</module>
   	<module>xd-cloud-oauth2-server</module>
   	<module>xd-cloud-zuul</module>
   	<module>xd-cloud-config</module>
+  	
   </modules>
 </project>
