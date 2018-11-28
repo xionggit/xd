@@ -5,6 +5,7 @@ xd是基于`spring boot 2.1.0`和 `spirng cloud (Finchley SR2)`的微服务开�
 # [技术选型](https://github.com/xionggit/xd/wiki/%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B) 
 # [迭代计划](https://github.com/xionggit/xd/wiki/%E8%BF%AD%E4%BB%A3%E8%A7%84%E5%88%92)
 # [开发洁癖](https://github.com/xionggit/xd/wiki/%E4%BB%A3%E7%A0%81%E6%B4%81%E7%99%96)
+# [相关部署及修改说明](https://github.com/xionggit/xd/wiki)
 # 框架目录规划
     * `xd`
         * `xd-common`
