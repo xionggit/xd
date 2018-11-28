@@ -15,7 +15,7 @@ xd是基于`spring boot 2.1.0`和 `spirng cloud (Finchley SR2)`的微服务开�
             * `xd-common-generator-util` 代码生成器，准备在1.1版本整合swagger和hibernate validation
         * `xd-cloud-frameword`
             * `xd-cloud-zuul` 使用zuul2.0实现网关
-            * `xd-cloud-config` (是否使用consule的配置待定) spring config配置中心，所有服务从配置中心读取文件
+            * `xd-cloud-config` (是否使用consul的配置待定) spring config配置中心，所有服务从配置中心读取文件
             * `xd-cloud-zipkin` 服务追踪
             * `xd-cloud-oauth2-server` (是不是放到这一级待定) 实现`spring security`统一认证个`oauth2`授权，
         * `xd-web-parent`
@@ -34,7 +34,7 @@ xd是基于`spring boot 2.1.0`和 `spirng cloud (Finchley SR2)`的微服务开�
 # 环境配置（版本参考技术选型中所列模型）
     * jdk1.8
     * mysql数据库
-    * consule注册中心
+    * consul注册中心
     * Nginx反向代理服务器，暂时只作为文件服务器使用
     * Git版本管理
     * Redis
