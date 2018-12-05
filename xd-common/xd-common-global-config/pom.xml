@@ -6,4 +6,48 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>xd-common-global-config</artifactId>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>  
+        <groupId>org.springframework.boot</groupId>  
+        <artifactId>spring-boot-starter-data-redis</artifactId>  
+    </dependency> 
+    <!-- redis依赖commons-pool 这个依赖一定要添加 -->
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-pool2</artifactId>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+		<plugin>
+		    <artifactId>maven-resources-plugin</artifactId>
+		    <executions>
+		        <execution>
+		            <id>copy-properties</id>
+		            <phase>process-sources</phase>
+		            <goals>
+		                <goal>copy-resources</goal>
+		            </goals>
+		            <configuration>
+		                <outputDirectory>${basedir}/target/classes/org/xd/common/global/config</outputDirectory>
+		                <resources>
+		                    <resource>
+		                        <!-- 把国际化资源文件打包到与classes同级目录，目的是为了在jar包中可以读取到国际化配置文件，
+		                                                                可以在项目中覆盖这里的国际化配置 -->
+		                        <directory>${basedir}/src/main/resources/locale</directory>
+		                        <includes>
+		                            <include>*.properties</include>
+		                        </includes>
+		                    </resource>
+		                </resources>
+		            </configuration>
+		        </execution>
+		    </executions>
+		</plugin>      
+	</plugins>
+  </build>
 </project>
