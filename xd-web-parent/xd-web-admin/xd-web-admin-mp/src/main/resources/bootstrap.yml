@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: web-admin-mp
+  cloud:
+    config:
+      #默认激活dev分支
+      profile: dev
+      discovery:
+        #用于指示已启用配置服务器发现的标志（将通过发现查找配置服务器URL）
+        enabled: true
+        #用于定位配置服务器的服务ID，及config-service中定义的spring.application.name
+        service-id: config-service
+
+logging:
+  level:
+    root: info
+
