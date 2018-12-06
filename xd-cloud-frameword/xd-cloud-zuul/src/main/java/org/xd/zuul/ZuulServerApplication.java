@@ -1,12 +1,9 @@
 package org.xd.zuul;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.zuul.EnableZuulServer;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -18,10 +15,8 @@ import lombok.extern.slf4j.Slf4j;
 */
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableZuulServer
+@EnableZuulProxy
 @Slf4j
-@RestController
-@EnableAutoConfiguration
 public class ZuulServerApplication {
     public static void main(String[] args) {
         SpringApplication.run(ZuulServerApplication.class, args);

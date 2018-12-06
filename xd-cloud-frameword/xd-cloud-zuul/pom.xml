@@ -6,12 +6,6 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>xd-cloud-zuul</artifactId>
-  <dependencies>
-    <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-    </dependency>
-  </dependencies>
   <build>
     <plugins>
       <plugin>
